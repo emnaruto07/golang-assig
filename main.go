@@ -1,8 +1,9 @@
 package main
 
 import (
-	"config"
 	"fmt"
+
+	"github.com/Shazeb01/golang-assig/pkg/config"
 )
 
 func main() {
