@@ -2,12 +2,10 @@ package config
 
 var cfg = make(map[string]string)
 
-func Get(s string) string {
-	const port = "8000"
-	return port
-
+func get(key string) string {
+	return cfg[key]
 }
 
-func Set(s string, u string) {
-
+func set(key, value string) {
+	cfg[key] = value
 }

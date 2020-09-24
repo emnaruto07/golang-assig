@@ -2,11 +2,14 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/Shazeb01/golang-assig/pkg/config"
+	"os"
 )
 
 func main() {
-	port := config.Get(port)
-	fmt.Println(port)
+	port := os.Getenv("PORT")
+	if len(port) == 0 {
+		port = "8000"
+	}
+	conf := config.set("port", port)
+	fmt.Println(conf)
 }
