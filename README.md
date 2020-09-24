@@ -18,4 +18,4 @@ port 8001
 host 127.0.0.1
 connectionHost db.mysecretapp.prod
 connectionDB testapp
-connectionUser user
+connectionUser user`
