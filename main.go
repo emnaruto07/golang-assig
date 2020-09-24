@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/Shazeb01/golang-assig/pkg/config"
 )
 
 func main() {
@@ -10,6 +12,6 @@ func main() {
 	if len(port) == 0 {
 		port = "8000"
 	}
-	conf := config.set("port", port)
+	conf := config.Get(port)
 	fmt.Println(conf)
 }
