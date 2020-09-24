@@ -8,7 +8,7 @@ Making golang module for assignment.
 
 
 ## OUTPUT
-```➜  golang-assig git:(master) ✗ go run main.go
+`➜  golang-assig git:(master) ✗ go run main.go
 port 8000
 host localhost
 connectionHost db.mysecretapp.dev
@@ -18,4 +18,4 @@ port 8001
 host 127.0.0.1
 connectionHost db.mysecretapp.prod
 connectionDB testapp
-connectionUser user```
+connectionUser user
